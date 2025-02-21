@@ -1,6 +1,7 @@
 use rand::Rng;
 use textplots::{Chart, Plot, Shape};
 
+//Linear regression model
 #[derive(Debug)]
 struct LinearRegression {
     weight: f64,
@@ -8,6 +9,7 @@ struct LinearRegression {
 }
 
 impl LinearRegression {
+    //Creates a new Linear Regression model instance
     fn new() -> Self {
         let mut rng = rand::rng();
         Self {
@@ -15,17 +17,18 @@ impl LinearRegression {
             bias: rng.random(),
         }
     }
-
+//Performs a forward pass to predict the output
     fn forward(&self, x: f64) -> f64 {
         self.weight * x + self.bias
     }
-
+//Calculates the Mean Squared Error (MSE) loss
     fn loss(&self, y_pred: f64, y_true: f64) -> f64 {
         (y_pred - y_true).powi(2)
     }
 }
 
 fn main() {
+    // Generate synthetic data
     let mut rng = rand::rng();
     let data: Vec<(f64, f64)> = (0..100)
         .map(|_| {
@@ -36,8 +39,10 @@ fn main() {
         })
         .collect();
 
+    // Initialize the model
     let mut model = LinearRegression::new();
 
+    // Training loop
     let learning_rate = 0.001;
     let epochs = 1000;
     for epoch in 0..epochs {
@@ -50,12 +55,12 @@ fn main() {
             model.weight -= learning_rate * 2.0 * (y_pred - y) * x;
             model.bias -= learning_rate * 2.0 * (y_pred - y);
         }
-
+        // Print the loss every 100 epochs
         if epoch % 100 == 0 {
             println!("Epoch {}: Loss = {}", epoch, total_loss / data.len() as f64);
         }
     }
-
+    // Evaluate the model
     let test_data: Vec<(f64, f64)> = (0..20)
         .map(|_| {
             let x: f64 = rng.random_range(0.0..10.0);
@@ -69,6 +74,7 @@ fn main() {
     let test_y: Vec<f64> = test_data.iter().map(|(_, y)| *y).collect();
     let predictions: Vec<f64> = test_x.iter().map(|x| model.forward(*x)).collect();
 
+    // Plot the results
     let true_points: Vec<(f32, f32)> = test_x
         .iter()
         .zip(test_y.iter())
