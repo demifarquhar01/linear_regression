@@ -95,7 +95,7 @@ This will run the linear regression model, train it on simulated data, and print
 **Documentation**:
   - Immersed a great deal in Rust and crate documentation to explain how to use the libraries and features which had been employed.
   - The guide provided good examples and explanations, which were crucial in using the model.
-  - Guided how to use Git integration in RustRover effectively
+  - Guided how to use Git integration in RustRover effectively.
 
 ## 📖 Learning Reflections
 
@@ -103,7 +103,7 @@ This will run the linear regression model, train it on simulated data, and print
 
 **Outdated Functions**:
  - Encountered issues with an existing function that did not support the current version.
- - Learned about the importance of keeping dependencies up-to-date and searching for deprecation warnings.
+ - Learned about the importance of keeping dependencies up-to-date.
 
 **Limited Resources**:
  - Faced challenges due to a shortage of resources and tutorials on machine learning in Rust.
