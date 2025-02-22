@@ -1,14 +1,16 @@
 # Linear Regression Model
+## 📌 Overview 
 This project showcases how to create an instance of the simple linear regression model from a Rust program that uses the `burn` library. This instance is then utilized to forecast the output of the function `y = 2x + 1` by training with synthetic data. The project uses the `burn` library release 0.16.0 and the specified dependencies within the `Cargo.toml` file.
 
 ## Table of Contents
-- [Setup](#setup)
-- [Approach](#approach)
-- [Program Execution Results](#program-execution-results)
-- [Resources Used](#resources-used)
-- [Learning Reflections](#learning-reflections)
+1. [📌 Overview](#-overview)  
+2. [🛠️ Setup](#️-setup)  
+3. [📈 Approach](#-approach)
+4. [📤 Program Execution Results](#-program-execution-results)
+5. [📚Resources Used](#-resources-used)
+6. [📖 Learning Reflections](#-learning-reflections)
 
-## Setup
+## 🛠️ Setup
 To set up the project, do the following:
 ## Prerequisites
 Ensure you have Rust installed. If you do not have Rust installed, you can install Rust using `rustup`.
@@ -51,7 +53,7 @@ cargo run
 This will run the linear regression model, train it on simulated data, and print out the results, including the loss values, final model parameters, and a plot of the true and predicted data points.
   ```
 
-## Approach
+## 📈 Approach
 1. **Define the Model**:
   - Use `LinearRegression` struct to define the model with `weight` and `bias`.
   - Define methods for creating a new instance, making predictions (`forward`), and calculating the loss (`loss`).
@@ -67,14 +69,14 @@ This will run the linear regression model, train it on simulated data, and print
   - Validated the model against new unseen test data.
   - Plotted both the actual and predicted data points using the `textplots` crate.
   
-  ## Program Execution Results
+  ## 📤 Program Execution Results
   **Sample Output:**
   
  ![image_alt](https://github.com/demifarquhar01/linear_regression/blob/98278736b0189882c564552e87713fc475e682e2/output1.png)
  ![image_alt](https://github.com/demifarquhar01/linear_regression/blob/98278736b0189882c564552e87713fc475e682e2/output2.png)
 
   
-  ## Resources Used
+  ## 📚 Resources Used
   **Rust Documentation**:
   - [The Rust Programming Language](https://doc.rust-lang.org/book/)
   - [rand crate documentation](https://docs.rs/rand/latest/rand/)
@@ -95,7 +97,7 @@ This will run the linear regression model, train it on simulated data, and print
   - The guide provided good examples and explanations, which were crucial in using the model.
   - Guided how to use Git integration in RustRover effectively
 
-## Learning Reflections
+## 📖 Learning Reflections
 
 **Challenges Faced**
 
