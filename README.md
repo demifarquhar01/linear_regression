@@ -88,8 +88,8 @@ This will run the linear regression model, train it on simulated data, and print
 - [Git](https://www.jetbrains.com/help/rust/using-git-integration.html)
 
 **AI Assistance**:
-  - AI tools was particularly helpful in correcting deprecation warnings.
-  - Helped in rectifying mistakes which I was gaining.
+  - AI tools was particularly helpful in correcting warnings.
+  - Helped in rectifying mistakes which I was geeting.
   - Explained some code snippets that I didn't undestand and functions.
     
 **Documentation**:
@@ -101,12 +101,12 @@ This will run the linear regression model, train it on simulated data, and print
 
 **Challenges Faced**
 
-**Depreciation Warnings**:
- - Encountered issues early on with deprecated functions in the `rand` crate.
+**Outdated Functions**:
+ - Encountered issues with an existing function that did not support the current version.
  - Learned about the importance of keeping dependencies up-to-date and searching for deprecation warnings.
 
 **Limited Resources**:
  - Faced challenges due to a shortage of resources and tutorials on machine learning in Rust.
  - Resolved this by referring to general Rust documentation and experimenting with the code.
 
-Overall, this project was an comprehensive learning experience of developing a machine learning model in Rust, handling the deprecated functions, and utilizing various crates to do machine learning and data visualizations.
+Overall, this project was a valuable learning experience in developing a machine learning model in Rust, working with functions, and using different crates for machine learning and data visualization.
